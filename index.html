@@ -2,11 +2,166 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <title>Интернет-магазин "Мишка"</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <a class="page-header__logo">  
+        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Интернет-магазин Мишка">
+      </a> 
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li>
+              <a class="site-list__link" href="#">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">        
+            <li class="user-list__item">
+              <form class="user-list__search search-form" method="get" action="https://echo.htmlacademy.ru">
+                <input class="search-form__field" type="search" name="search" id="search-field">
+                <label class="seach-form__label" for="search-field">Поиск по сайту</label>
+              </form>
+            </li>          
+            <li class="user-list__item">
+              <a class="user-list__busket busket" href="#">Корзина пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav> 
+    </header>
+    <main class="page-main">
+      <h1 class="title-main">Милые штуки ручной работы для дома</h1>
+      <ul class="products">
+        <li class="products__item">
+          <a class="products__link" href="#">Предметы интерьера</a>
+        </li>
+        <li class="products__item">
+          <a class="products__link" href="#">Детские игрушки</a>
+        </li>
+      </ul>
+      <section class="hits">
+        <h2 class="visually-hidden">Лучшие товары</h2>
+        <article class="hits__item choice">
+          <h3 class="choice__title">Вязаные корзинки</h3>
+          <p class="choice__intro">Товар недели</p>
+          <p class="choice__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <table class="choice__list">
+            <tr>
+              <td class="choice__fitures">Цвет:
+              </td>
+              <td class="choice__value">"Тиффани" серый
+              </td>
+            </tr>
+            <tr>
+              <td class="choice__fitures">Диаметр:
+              </td>
+              <td class="choice__value">25 см
+              </td>
+            </tr>
+            <tr>
+              <td class="choice__fitures">Высота:
+              </td>
+              <td class="choice__value">15 см
+              </td>
+            </tr>
+          </table>
+          <img class="choice__img" src="http://placehold.it/260x315" width="260" height="315" alt="Вязаная корзинка">
+          <p class="choice__price">990 руб</p>
+          <a class="choice__order button" href="#">Заказать</a>
+          <div class="modal-busket">
+            <button class="modal-busket__btn-close" type="button">Закрыть корзину</button>
+            <p class="modal-busket__title">Добавить в корзину</p>
+            <p class="modal-busket__text">Выберите размер</p>
+            <form class="modal-busket__form form-size" method="get" action="https://echo.htmlacademy.ru">
+              <input class="form-size__choice form-size__choice--active" type="checkbox" name="small" id="small-size">
+              <label class="form-size__text" for="small-size">S</label> 
+              <input class="form-size__choice form-size__choice" type="checkbox" name="middle" id="middle-size">
+              <label class="form-size__text" for="middle-size">M</label>  
+              <input class="form-size__choice form-size__choice" type="checkbox" name="big" id="big-size">
+              <label class="form-size__text" for="big-size">L</label>          
+              <button class="form-size__send button" type="submit">Отправить</button>
+            </form>
+          </div>
+        </article>
+      </section>
+      <section class="advantages">
+        <h2 class="advantages__title">Коротко о нас</h2>
+        <div class="advantages__wrapper">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <p class="advantages__description advantages__description--eco">Экологически чистые материалы</p>
+            </li>
+            <li class="advantages__item">
+              <p class="advantages__description advantages__description--style">Скандинавский стиль по российской цене</p>
+            </li>
+            <li class="advantages__item">
+              <p class="advantages__description advantages__description--likes">Увеличивает лайки на фотографиях</p>
+            </li>
+            <li class="advantages__item">
+              <p class="advantages__description advantages__description--handmade">Связано вручную с любовью и умилением</p>
+            </li>
+            <li class="advantages__item">
+              <p class="advantages__description advantages__description--support">Поддержка отечественного производите</p>
+            </li>
+            <li class="advantages__item">
+              <p class="advantages__description advantages__description--pack">Поставляется в подарочной упаковке</p>
+            </li>
+          </ul>
+        </div>  
+      </section>
+      <section class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__list slider">
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <cite class="reviews-author">Анастасия Красильникова
+              <span class="reviews-email">@misssssiskras</span>
+            </cite>            
+          </blockquote>
+        </div>
+        <button class="reviews__prev" type="button">Назад</button>
+        <button class="reviews__next" type="button">Вперед</button>        
+        <a class="reviews__write button" href="#">Написать</a>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <p class="contacts__text">
+          <span class="contacts__info">e-mail:</span>
+          <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        </p>
+        <p class="contacts__text">
+          <span class="contacts__info">адрес:</span>
+          <span class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+        </p>
+        <iframe class="contacts__map"></iframe>
+        <a class="contacts__write button" href="mailto:info@mimimishkashop.ru">Напишите нам</a>
+      </section>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">Мы в инстаграме</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Мы в фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">Мы в твиттере</a>
+            </li>
+          </ul>
+        </div>  
+        <div class="page-footer__copyrite copywrite">
+          <p class="copywrite__text">Разработано:</p>
+          <a class="copywrite__logo" href="https://htmlacademy.ru/">
+            <img class="copywrite__logo-img" src="http://placehold.it/27x34" width="27" height="34" alt="HTML-академия">
+          </a> 
+        </div>
+      </footer>    
   </body>
 </html>
