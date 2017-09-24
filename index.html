@@ -50,43 +50,23 @@
           <h3 class="choice__title">Вязаные корзинки</h3>
           <p class="choice__intro">Товар недели</p>
           <p class="choice__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="choice__list">
-            <tr>
-              <td class="choice__fitures">Цвет:
-              </td>
-              <td class="choice__value">"Тиффани" серый
-              </td>
-            </tr>
-            <tr>
-              <td class="choice__fitures">Диаметр:
-              </td>
-              <td class="choice__value">25 см
-              </td>
-            </tr>
-            <tr>
-              <td class="choice__fitures">Высота:
-              </td>
-              <td class="choice__value">15 см
-              </td>
-            </tr>
-          </table>
+          <ul class="choice__list">
+            <li class="choice__item">
+              <p class="choice__title">Цвет:</p>
+              <p class="choice__param">"Тиффани" серый</p>
+            </li>
+            <li class="choice__item">
+              <p class="choice__title">Диаметр:</p>
+              <p class="choice__param">25 см</p>
+            </li>
+            <li class="choice__item">
+              <p class="choice__title">Высота:</p>
+              <p class="choice__param">15 см</p>
+            </li>
+          </ul>
           <img class="choice__img" src="http://placehold.it/260x315" width="260" height="315" alt="Вязаная корзинка">
           <p class="choice__price">990 руб</p>
           <a class="choice__order button" href="#">Заказать</a>
-          <div class="modal-busket">
-            <button class="modal-busket__btn-close" type="button">Закрыть корзину</button>
-            <p class="modal-busket__title">Добавить в корзину</p>
-            <p class="modal-busket__text">Выберите размер</p>
-            <form class="modal-busket__form form-size" method="get" action="https://echo.htmlacademy.ru">
-              <input class="form-size__choice form-size__choice--active" type="checkbox" name="small" id="small-size">
-              <label class="form-size__text" for="small-size">S</label>
-              <input class="form-size__choice form-size__choice" type="checkbox" name="middle" id="middle-size">
-              <label class="form-size__text" for="middle-size">M</label>
-              <input class="form-size__choice form-size__choice" type="checkbox" name="big" id="big-size">
-              <label class="form-size__text" for="big-size">L</label>
-              <button class="form-size__send button" type="submit">Отправить</button>
-            </form>
-          </div>
         </article>
       </section>
       <section class="advantages">
@@ -142,20 +122,18 @@
         <a class="contacts__write button" href="mailto:info@mimimishkashop.ru">Напишите нам</a>
       </section>
       </main>
-      <footer class="page-footer">
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">Мы в инстаграме</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Мы в фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">Мы в твиттере</a>
-            </li>
-          </ul>
-        </div>
+      <footer class="page-footer social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">Мы в инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Мы в фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Мы в твиттере</a>
+          </li>
+        </ul>
         <div class="page-footer__copyrite copywrite">
           <p class="copywrite__text">Разработано:</p>
           <a class="copywrite__logo" href="https://htmlacademy.ru/">
@@ -163,5 +141,19 @@
           </a>
         </div>
       </footer>
+      <div class="modal-busket">
+        <button class="modal-busket__btn-close" type="button">Закрыть корзину</button>
+        <p class="modal-busket__title">Добавить в корзину</p>
+        <p class="modal-busket__text">Выберите размер</p>
+        <form class="modal-busket__form form-size" method="get" action="https://echo.htmlacademy.ru">
+          <input class="form-size__choice form-size__choice--active" type="checkbox" name="small" id="small-size">
+          <label class="form-size__text" for="small-size">S</label>
+          <input class="form-size__choice form-size__choice" type="checkbox" name="middle" id="middle-size">
+          <label class="form-size__text" for="middle-size">M</label>
+          <input class="form-size__choice form-size__choice" type="checkbox" name="big" id="big-size">
+          <label class="form-size__text" for="big-size">L</label>
+          <button class="form-size__send button" type="submit">Отправить</button>
+        </form>
+      </div>
   </body>
 </html>

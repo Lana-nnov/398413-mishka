@@ -43,65 +43,67 @@
           <p class="form-order__inner">
             <input class="form-order__step-first" type="radio" name="type" id="accessory-field" value="accessory">
             <label class="form-order__text" for="accessory-field">Аксессуар для интерьера</label>
-          <p>
+          </p>
           <p class="form-order__inner">
             <input class="form-order__step-first" type="radio" name="type" id="toy-field" value="toy">
             <label class="form-order__text" for="toy-field">Детская игрушка</label>
-          <p>
+          </p>
         </fieldset>
         <fieldset class="form-order__field">
           <legend class="form-order__name">Цвет</legend>
           <p class="form-order__inner">
             <input class="form-order__step-second" type="checkbox" name="white" id="white-field">
             <label class="form-order__text" for="white-field">Белый</label>
-          <p>
+          </p>
           <p class="form-order__inner">
             <input class="form-order__step-second" type="checkbox" name="gray" id="gray-field">
             <label class="form-order__text" for="gray-field">Серый</label>
-          <p>
+          </p>
           <p class="form-order__inner">
             <input class="form-order__step-second" type="checkbox" name="tiffani" id="tiffani-field">
             <label class="form-order__text" for="tiffani-field">"Тиффани"</label>
-          <p>
+          </p>
           <p class="form-order__inner">
             <input class="form-order__step-second" type="checkbox" name="black" id="black-field">
             <label class="form-order__text" for="black-field">Черный</label>
-          <p>
+          </p>
           <p class="form-order__inner">
             <input class="form-order__step-second" type="checkbox" name="pink" id="pink-field">
             <label class="form-order__text" for="pink-field">Розовый</label>
-          <p>
+          </p>
           <p class="form-order__inner">
             <input class="form-order__step-second" type="checkbox" name="orange" id="orange-field">
             <label class="form-order__text" for="orange-field">Оранжевый</label>
-          <p>
+          </p>
         </fieldset>
         <fieldset class="form-order__field">
           <legend class="form-order__name">ФИО</legend>
           <p class="form-order__inner">
             <input class="form-order__fullname" type="text" name="name" id="name-field" placeholder="Введите ваше имя*" required>
             <label class="form-order__text" for="name-field">Имя:</label>
-          <p>
+          </p>
           <p class="form-order__inner">
             <input class="form-order__fullname" type="text" name="surname" id="surname-field" placeholder="Укажите фамилию*" required>
             <label class="form-order__text" for="surname-field">Фамилия:</label>
-          <p>
+          </p>
           <p class="form-order__inner">
             <input class="form-order__fullname" name="patronymic" type="text" id="patronymic-field" placeholder="Отчество, если желаете*">
             <label class="form-order__text" for="patronymic-field">Отчество:</label>
-          <p>
+          </p>
         </fieldset>
         <fieldset class="form-order__field">
           <legend class="form-order__name">Тел</legend>
-          <p class="form-order__inner">
-            <input class="form-order__contacts form-order__contacts-phone" type="tel" name="phone" id="phone-field" placeholder="+7 ХХХ ХХ ХХ*" pattern="\+7\-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
-            <label class="form-order__text visually-hidden" for="phone-field">Введите телефон:</label>
+          <label class="form-order__connection form-order__connection--phone">
+            <span class="visually-hidden">Введите телефон:</span>
+            <input class="form-order__info" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*" pattern="\+7\-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+          </label>
         </fieldset>
         <fieldset class="form-order__field">
           <legend class="form-order__name">E-mail</legend>
-          <p class="form-order__inner">
-            <input class="form-order__contacts form-order__contacts-email" type="email" name="email" id="email-field" placeholder="Ваш Email*" required>
-            <label class="form-order__text visually-hidden" for="email-field">Введите email:</label>
+          <label class="form-order__connection form-order__connection--email">
+            <span class="visually-hidden">Введите e-mail:</span>
+            <input class="form-order__info" type="email" name="email" id="email-field" placeholder="Ваш Email*" required>
+          </label>
         </fieldset>
         <fieldset class="form-order__field">
           <legend class="form-order__name">Доп</legend>
@@ -112,20 +114,18 @@
         <button class="form-order__send button" type="submit">Отправить заказ</button>
       </form>
     </main>
-    <footer class="page-footer">
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Мы в инстаграме</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Мы в фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Мы в твиттере</a>
-          </li>
-        </ul>
-      </div>
+    <footer class="page-footer social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#">Мы в инстаграме</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">Мы в фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">Мы в твиттере</a>
+        </li>
+      </ul>
       <div class="page-footer__copyrite copywrite">
         <p class="copywrite__text">Разработано:</p>
         <a class="copywrite__logo" href="https://htmlacademy.ru/">
