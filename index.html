@@ -2,12 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>Интернет-магазин "Мишка"</title>
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Интернет-магазин Мишка">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин Мишка">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -23,7 +25,7 @@
           <ul class="main-nav__list user-list">
             <li class="user-list__item">
               <form class="user-list__search search-form" method="get" action="https://echo.htmlacademy.ru">
-                <input class="search-form__field" type="search" name="search" id="search-field">
+                <input class="search-form__field visually-hidden" type="search" name="search" id="search-field">
                 <label class="seach-form__label" for="search-field">Поиск по сайту</label>
               </form>
             </li>
@@ -35,19 +37,21 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="title-main">Милые штуки ручной работы для дома</h1>
-      <ul class="products">
-        <li class="products__item">
-          <a class="products__link" href="#">Предметы интерьера</a>
-        </li>
-        <li class="products__item">
-          <a class="products__link" href="#">Детские игрушки</a>
-        </li>
-      </ul>
+      <section class="desc-block">
+        <h1 class="title-main">Милые штуки ручной работы для дома</h1>
+        <ul class="products">
+          <li class="products__item">
+            <a class="products__link products__link--left" href="#">Предметы интерьера</a>
+          </li>
+          <li class="products__item">
+            <a class="products__link products__link--right" href="#">Детские игрушки</a>
+          </li>
+        </ul>
+      </section>
       <section class="hits">
         <h2 class="visually-hidden">Лучшие товары</h2>
         <article class="hits__item choice">
-          <h3 class="choice__title">Вязаные корзинки</h3>
+          <h3 class="choice__headline">Вязаные корзинки</h3>
           <p class="choice__intro">Товар недели</p>
           <p class="choice__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
           <ul class="choice__list">
@@ -64,7 +68,7 @@
               <p class="choice__param">15 см</p>
             </li>
           </ul>
-          <img class="choice__img" src="http://placehold.it/260x315" width="260" height="315" alt="Вязаная корзинка">
+          <img class="choice__img" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаная корзинка">
           <p class="choice__price">990 руб</p>
           <a class="choice__order button" href="#">Заказать</a>
         </article>
@@ -86,7 +90,7 @@
               <p class="advantages__description advantages__description--handmade">Связано вручную с любовью и умилением</p>
             </li>
             <li class="advantages__item">
-              <p class="advantages__description advantages__description--support">Поддержка отечественного производите</p>
+              <p class="advantages__description advantages__description--support">Поддержка отечественного производителя</p>
             </li>
             <li class="advantages__item">
               <p class="advantages__description advantages__description--pack">Поставляется в подарочной упаковке</p>
@@ -137,7 +141,7 @@
         <div class="page-footer__copyrite copywrite">
           <p class="copywrite__text">Разработано:</p>
           <a class="copywrite__logo" href="https://htmlacademy.ru/">
-            <img class="copywrite__logo-img" src="http://placehold.it/27x34" width="27" height="34" alt="HTML-академия">
+            <img class="copywrite__logo-img" src="img/htmlacademy.svg" width="27" height="34" alt="HTML-академия">
           </a>
         </div>
       </footer>
@@ -146,8 +150,8 @@
         <p class="modal-busket__title">Добавить в корзину</p>
         <p class="modal-busket__text">Выберите размер</p>
         <form class="modal-busket__form form-size" method="get" action="https://echo.htmlacademy.ru">
-          <input class="form-size__choice form-size__choice--active" type="checkbox" name="small" id="small-size">
-          <label class="form-size__text" for="small-size">S</label>
+          <input class="form-size__choice" type="checkbox" name="small" id="small-size">
+          <label class="form-size__text form-size__choice--active" for="small-size">S</label>
           <input class="form-size__choice form-size__choice" type="checkbox" name="middle" id="middle-size">
           <label class="form-size__text" for="middle-size">M</label>
           <input class="form-size__choice form-size__choice" type="checkbox" name="big" id="big-size">
