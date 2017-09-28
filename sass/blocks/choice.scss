@@ -1,0 +1,37 @@
+.choice {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  outline: 1px solid red;
+}
+
+.choice__headline {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.choice__intro {
+  margin: 0;
+  padding: 0;
+  color: #63d1bb;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.choice__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.choice__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}

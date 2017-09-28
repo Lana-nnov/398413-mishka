@@ -1,0 +1,32 @@
+.shop {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  outline: 1px solid red;
+}
+
+.shop__title {
+  padding: 0;
+  padding-left: 30px;
+  margin: 0;
+  color: #000000;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.shop__decsription {
+  padding-left: 30px;
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.shop__price {
+  padding-left: 30px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.shop__busket {
+  padding-left: 30px;
+  font: inherit;
+}
