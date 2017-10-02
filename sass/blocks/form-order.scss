@@ -103,6 +103,11 @@
     outline: 1px solid green;
   }
 
+  .form-order__step-first,
+  .form-order__step-second {
+    display: none;
+  }
+
   .form-order__inner {
     width: 75%;
     outline: 1px solid green;
