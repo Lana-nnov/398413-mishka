@@ -11,3 +11,19 @@
   font-weight: 700;
   outline: 1px solid blue;
 }
+
+@media (min-width: $tablet-width) {
+  .inner-title {
+  font-size: 43px;
+  line-height: 50px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .inner-title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+}

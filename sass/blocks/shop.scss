@@ -30,3 +30,45 @@
   padding-left: 30px;
   font: inherit;
 }
+
+@media (min-width: $tablet-width) {
+  .shop {
+    display: flex;
+    outline: 1px solid green;
+    min-height: 333px;
+  }
+
+  .shop__link {
+    width: 330px;
+    flex-grow: 1;
+    outline: 1px solid green;
+    background-color: pink;
+  }
+
+  .shop__text {
+    padding: 30px;
+    flex-grow: 1;
+    width: 270px;
+    outline: 1px solid green;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .shop {
+    display: block;
+    padding-bottom: 0;
+  }
+
+  .shop__text {
+    width: auto;
+    outline: none;
+  }
+
+  .shop__img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 270px;
+    background-color: pink;
+  }
+}

@@ -1,9 +1,11 @@
 .form-order {
+  min-width: 260px;
   padding-top: 30px;
   padding-bottom: 60px;
   padding-left: 30px;
   padding-right: 30px;
   outline: 1px solid green;
+  background-color: #ffffff;
 }
 
 .form-order__info {
@@ -15,7 +17,7 @@
 
 .form-order__field {
   padding: 0;
-  margon: 0;
+  margin: 0;
   border: none;
 }
 
@@ -35,12 +37,14 @@
 
 .form-order__fullname,
 .form-order__inform {
+  width: 100%;
   font: inherit;
   border: none;
   border-bottom: 2px solid #000000;
 }
 
 .form-order__add {
+  width: 100%;
   border: 2px solid #000000;
 }
 
@@ -51,4 +55,153 @@
 
 .form-order__send {
   background-color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .form-order {
+    padding: 0;
+  }
+
+  .form-order__field--white {
+    background-color: #ffffff;
+  }
+
+  .form-order__field--gray {
+    background-color: #f1f1f1;
+  }
+
+  .form-order__info {
+    width: auto;
+    max-width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+    margin-top: 70px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .form-order__field {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    outline: 1px solid red;
+  }
+
+  .form-order__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: auto;
+    max-width: 768px;
+    margin: 0 auto;
+    outline: 1px solid green;
+    background-color: pink;
+  }
+
+  .form-order__name {
+    width: 25%;
+    outline: 1px solid green;
+  }
+
+  .form-order__fullname {
+    width: auto;
+  }
+
+  .form-order__inner {
+    width: 75%;
+    outline: 1px solid green;
+  }
+
+  .form-order__inform {
+    width: 100%;
+    box-sizing: content-box;
+  }
+
+  .form-order__connection {
+    background-color: red;
+    width: 75%;
+  }
+
+  .form-order__add {
+    background-color: red;
+    width: 73%;
+    height: 140px;
+  }
+
+  .form-order__text {
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+    font-size: 19px;
+    outline: 1px solid red;
+  }
+
+  .form-order__name-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-order__fullname {
+    order: 1;
+    width: 53%;
+  }
+
+  .form-order__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    max-width: 768px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    justify-content: space-between;
+    border: none;
+    outline: 1px solid green;
+  }
+
+  .form-order__send {
+    order: -1;
+    width: 25%;
+  }
+
+  .form-order__note {
+    width: 50%;
+    outline: 1px solid green;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .form-order__info {
+    width: auto;
+    max-width: 1050px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-bottom: 60px;
+  }
+
+  .form-order__text {
+    width: 47.5%;
+  }
+
+  .form-order__wrapper {
+    width: auto;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+
+  .form-order__fullname {
+    order: 1;
+    width: 52%;
+  }
+
+  .form-order__bottom {
+    max-width: 1250px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
 }

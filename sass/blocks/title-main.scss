@@ -1,9 +1,31 @@
 .title-main {
   padding: 0;
   margin: 0;
+  margin-bottom: 120px;
   color: #010000;
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .title-main {
+    font-size: 43px;
+    line-height: 50px;
+    padding-right: 135px;
+    padding-left: 135px;
+    margin-bottom: 250px;
+  }
+
+}
+
+@media (min-width: $tablet-width) {
+  .title-main {
+    font-size: 53px;
+    line-height: 57px;
+    padding-right: 320px;
+    padding-left: 320px;
+  }
+
 }

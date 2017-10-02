@@ -1,6 +1,5 @@
 .choice {
-  padding-top: 30px;
-  padding-bottom: 40px;
+  min-width: 260px;
   padding-left: 30px;
   padding-right: 30px;
   outline: 1px solid red;
@@ -31,7 +30,133 @@
 }
 
 .choice__price {
+  margin: 0;
+  padding: 0;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+}
+
+.choice__img {
+  background-color: pink;
+}
+
+.choice__order {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .choice {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    max-width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+    background-color: #ffffff;
+  }
+
+  .choice__headline {
+    width: 380px;
+    outline: 1px solid red;
+    flex-grow: 1;
+  }
+
+  .choice__intro {
+    width: 167px;
+    outline: 1px solid red;
+  }
+
+  .choice__wrapper {
+    position: relative;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    outline: 1px solid red;
+  }
+
+  .choice__img {
+    position: absolute;
+    top: 1px;
+    right: -100%;
+    width: 333px;
+    height: 404px;
+    outline: 1px solid red;
+  }
+
+  .choice__list {
+    margin-bottom: 33px;
+  }
+
+  .choice__item {
+    display: flex;
+    outline: 1px solid green;
+  }
+
+  .choice__order {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .choice {
+    width: auto;
+    max-width: 1050px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0 auto;
+  }
+
+  .choice__headline {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin: 0;
+    width: 380px;
+    font-size: 53px;
+    line-height: 57px;
+    outline: 1px solid red;
+    flex-grow: 1;
+    z-index: 2;
+  }
+
+  .choice__intro {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    width: 175px;
+    outline: 1px solid red;
+    order: -1;
+  }
+
+  .choice__wrapper {
+    padding-left: 175px;
+    width: 350px;
+    }
+
+  .choice__img {
+    position: absolute;
+    width: 100%;
+    height: 636px;
+    top: -136px;
+    right: -100%;
+    outline: 1px solid red;
+    z-index: 1;
+  }
+
+  .choice__list {
+    margin-bottom: 95px;
+  }
+
+  .choice__description {
+    padding: 0;
+    padding-top: 20px;
+    margin: 0;
+    margin-bottom: 50px;
+  }
 }

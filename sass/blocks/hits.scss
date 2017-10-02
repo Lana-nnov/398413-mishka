@@ -2,3 +2,17 @@
   padding: 0;
   margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .hits {
+    margin-bottom: 120px;
+  }
+
+}
+
+@media (min-width: $tablet-width) {
+  .hits {
+    margin-bottom: 150px;
+  }
+
+}
