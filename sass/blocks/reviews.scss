@@ -59,7 +59,7 @@
     flex-grow: 1;
     outline: 1px solid green;
     order: -2;
-    }
+  }
 
   .reviews__item {
     padding-top: 50px;
@@ -74,7 +74,7 @@
     flex-grow: 1;
     outline: 1px solid green;
     order: -1;
-    }
+  }
 
   .reviews__write-link {
     float: right;
@@ -93,8 +93,7 @@
     width: 225px;
     flex-grow: 1;
     outline: 1px solid green;
-    }
-
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -112,6 +111,7 @@
     font-size: 43px;
     line-height: 50px;
     }
+
   .reviews__item {
     width: 800px;
     flex-grow: 1;
@@ -119,14 +119,13 @@
 
   .reviews__write {
     width: 350px;
-    }
+  }
 
   .reviews__author {
     width: 350px;
-    }
+  }
 
   .reviews__button {
     width: 350px;
-    }
-
+  }
 }

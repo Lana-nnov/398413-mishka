@@ -103,10 +103,6 @@
     outline: 1px solid green;
   }
 
-  .form-order__fullname {
-    width: auto;
-  }
-
   .form-order__inner {
     width: 75%;
     outline: 1px solid green;
@@ -169,7 +165,6 @@
     width: 50%;
     outline: 1px solid green;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -203,5 +198,4 @@
     padding-left: 0;
     padding-right: 0;
   }
-
 }

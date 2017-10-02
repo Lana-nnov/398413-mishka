@@ -43,10 +43,9 @@
   }
 
   .products__link {
-  padding-top: 30px;
-  padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -58,5 +57,4 @@
     margin-bottom: 70px;
     outline: 1px solid green;
   }
-
 }
