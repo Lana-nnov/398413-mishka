@@ -55,9 +55,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  main-nav {
+  .main-nav {
     min-height: 127px;
   }
+
   .main-nav__logo {
     width: 86px;
     order: -1;

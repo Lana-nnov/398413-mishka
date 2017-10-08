@@ -153,6 +153,11 @@
   .form-order__text--checkbox {
     text-align: center;
     margin-bottom: 40px;
+    display: inline-block;
+    vertical-align: top;
+    width: 245px;
+    font-size: 19px;
+    outline: 1px solid red;
   }
 
   .form-order__text--radio {
@@ -187,14 +192,6 @@
     width: 490px;
     height: 130px;
     margin-bottom: 50px;
-  }
-
-  .form-order__text--checkbox {
-    display: inline-block;
-    vertical-align: top;
-    width: 245px;
-    font-size: 19px;
-    outline: 1px solid red;
   }
 
   .form-order__name-info {
