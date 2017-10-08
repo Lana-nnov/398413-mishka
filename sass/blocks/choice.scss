@@ -1,12 +1,12 @@
 .choice {
-  min-width: 260px;
+  outline: 1px solid red;
   padding-left: 30px;
   padding-right: 30px;
-  outline: 1px solid red;
 }
 
 .choice__headline {
   margin: 0;
+  margin-bottom: 27px;
   padding: 0;
   color: #000000;
   font-size: 25px;
@@ -14,87 +14,143 @@
   font-weight: 700;
 }
 
+.choice__wrapper {
+  position: relative;
+  padding-bottom: 165px;
+}
+
 .choice__intro {
+  display: block;
   margin: 0;
   padding: 0;
   color: #63d1bb;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+  text-transform: uppercase;
+}
+
+.choice__description {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 .choice__list {
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
   list-style: none;
 }
 
-.choice__price {
-  margin: 0;
+.choice__item {
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  outline: 1px solid green;
+}
+
+.choice__title,
+.choice__param {
   padding: 0;
+  margin: 0;
+}
+
+.choice__price {
+  padding: 0;
+  margin-bottom: 23px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
 }
 
-.choice__img {
-  background-color: pink;
-}
-
 .choice__order {
   display: block;
-  margin-top: 25px;
-  margin-bottom: 25px;
   box-sizing: border-box;
+}
+
+.choice__bottom {
+  position: absolute;
+  bottom: 47px;
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .choice {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    width: auto;
-    max-width: 668px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 60px;
     background-color: #ffffff;
   }
 
   .choice__headline {
-    width: 380px;
-    outline: 1px solid red;
-    flex-grow: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .choice__intro {
-    width: 167px;
+    position: absolute;
+    top: 12px;
+    right: -198px;
+    width: 80px;
+    text-align: center;
     outline: 1px solid red;
   }
 
   .choice__wrapper {
-    position: relative;
+    position: static;
     display: flex;
-    width: 50%;
-    flex-direction: column;
+    padding-bottom: 0;
     outline: 1px solid red;
   }
 
+  .choice__text {
+    padding-top: 102px;
+    padding-right: 47px;
+    width: 287px;
+  }
+
+  .choice__description {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+
+  .choice__list {
+    margin-bottom: 58px;
+  }
+
+  .choice__item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
   .choice__img {
-    position: absolute;
-    top: 1px;
-    right: -100%;
-    width: 333px;
+    padding-top: 107px;
+    width: 334px;
     height: 404px;
     outline: 1px solid red;
   }
 
-  .choice__list {
-    margin-bottom: 33px;
+  .choice__bottom {
+    position: static;
   }
 
-  .choice__item {
-    display: flex;
-    outline: 1px solid green;
+  .choice__price {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 35px;
   }
 
   .choice__order {
@@ -105,57 +161,42 @@
 
 @media (min-width: $desktop-width) {
   .choice {
-    width: auto;
-    max-width: 1050px;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin: 0 auto;
+    padding-left: 175px;
+    padding-bottom: 80px;
   }
 
   .choice__headline {
-    position: relative;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    margin: 0;
-    width: 380px;
+    top: 55px;
+    left: 170px;
     font-size: 53px;
     line-height: 57px;
-    outline: 1px solid red;
-    flex-grow: 1;
-    z-index: 2;
   }
 
   .choice__intro {
-    padding-top: 30px;
-    padding-bottom: 50px;
-    width: 175px;
-    outline: 1px solid red;
-    order: -1;
+    top: 15px;
+    left: -127px;
+    font-size: 17px;
+    line-height: 17px;
   }
 
-  .choice__wrapper {
-    padding-left: 175px;
-    width: 350px;
+  .choice__text {
+    width: 295px;
+    padding-right: 55px;
+    padding-top: 160px;
   }
 
   .choice__img {
-    position: absolute;
-    width: 100%;
-    height: 636px;
-    top: -136px;
-    right: -100%;
+    width: 525px;
+    height: 638px;
+    padding: 0;
     outline: 1px solid red;
-    z-index: 1;
-  }
-
-  .choice__list {
-    margin-bottom: 95px;
   }
 
   .choice__description {
-    padding: 0;
-    padding-top: 20px;
-    margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
+  }
+
+  .choice__list {
+    margin-bottom: 110px;
   }
 }

@@ -1,7 +1,15 @@
 .shop {
-  padding-top: 30px;
-  padding-bottom: 30px;
   outline: 1px solid red;
+}
+
+.shop__product {
+  display: block;
+  margin-bottom: 17px;
+}
+
+.shop__link {
+  display: block;
+  margin-bottom: 17px;
 }
 
 .shop__title {
@@ -9,47 +17,80 @@
   padding-left: 30px;
   margin: 0;
   color: #000000;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 24px;
   font-weight: 700;
 }
 
 .shop__decsription {
+  padding: 0;
   padding-left: 30px;
+  padding-bottom: 25px;
+  margin: 0;
   font-size: 13px;
-  line-height: 30px;
+  line-height: 17px;
+  border-bottom: 1px solid #ececec;
+}
+
+.shop__bottom {
+  display: flex;
+  justify-content: space-between;
 }
 
 .shop__price {
+  padding: 0;
   padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+  width: 73px;
   color: #000000;
   font-weight: 700;
 }
 
 .shop__busket {
-  padding-left: 30px;
   font: inherit;
+  width: 103px;
 }
 
 @media (min-width: $tablet-width) {
   .shop {
     display: flex;
     outline: 1px solid green;
-    min-height: 333px;
   }
 
-  .shop__link {
-    width: 330px;
-    flex-grow: 1;
-    outline: 1px solid green;
+  .shop__product {
+    width: 334px;
+    height: 334px;
+    margin-bottom: 0;
     background-color: pink;
+    outline: 1px solid green;
   }
 
   .shop__text {
-    padding: 30px;
-    flex-grow: 1;
-    width: 270px;
+    position: relative;
+    padding-top: 25px;
+    width: 334px;
     outline: 1px solid green;
+  }
+
+  .shop__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .shop__bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .shop__price {
+    width: 150px;
+  }
+
+  .shop__busket {
+    width: 150px;
   }
 }
 
@@ -59,15 +100,25 @@
     padding-bottom: 0;
   }
 
-  .shop__text {
-    width: auto;
-    outline: none;
+  .shop__product {
+    width: 316px;
+    height: 465px;
   }
 
-  .shop__img {
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 270px;
-    background-color: pink;
+  .shop__text {
+    width: 316px;
   }
+
+  .shop__decsription {
+    padding-bottom: 110px;
+  }
+
+  .shop__price {
+    width: 140px;
+  }
+
+  .shop__busket {
+    width: 140px;
+  }
+
 }

@@ -1,20 +1,22 @@
 .catalog {
-  min-width: 260px;
+  outline: 1px solid red;
+}
+
+.catalog__item {
   padding-left: 30px;
   padding-right: 30px;
-  outline: 1px solid red;
+  padding-top: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .catalog {
-    width: auto;
-    max-width: 668px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin: 0 auto;
-    margin-bottom: 35px;
-    margin-top: 90px;
+    padding-top: 93px;
     background-color: #ffffff;
+  }
+
+  .catalog__item {
+    padding: 0;
+    padding-bottom: 55px;
   }
 }
 
@@ -22,20 +24,14 @@
   .catalog {
     display: flex;
     flex-wrap: wrap;
-    width: auto;
-    max-width: 1050px;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin: 0 auto;
-    margin-top: 120px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
+    padding-top: 130px;
     background-color: #ffffff;
   }
 
   .catalog__item {
-    width: 200px;
-    flex-grow: 1;
-    margin-right: 50px;
+    width: 316px;
+    margin-right: 51px;
   }
 
   .catalog__item:nth-child(3n) {

@@ -3,14 +3,18 @@
   margin: 0;
 }
 
-@media (min-width: $tablet-width) {
-  .hits {
-    margin-bottom: 120px;
-  }
+.hits__container {
+  padding-top: 30px;
 }
 
 @media (min-width: $tablet-width) {
-  .hits {
-    margin-bottom: 150px;
+  .hits__container {
+    padding-top: 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hits__container {
+    padding-top: 70px;
   }
 }

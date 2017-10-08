@@ -17,16 +17,32 @@ img {
   height: auto;
 }
 
+.container {
+  margin: 0 auto;
+  width: 320px;
+  outline: 1px solid black;
+}
+
 @media (min-width: $tablet-width) {
   body {
-    background-color: red;
+    width: auto;
     font-size: 17px;
     line-height: 30px;
+  }
+
+  .container {
+    width: auto;
+    max-width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  body {
-    background-color: blue;
+  .container {
+    max-width: 1050px;
+    padding-left: 100px;
+    padding-right: 100px;
+    outline: 1px solid black;
   }
 }

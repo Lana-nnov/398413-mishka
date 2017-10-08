@@ -1,21 +1,25 @@
 .inner-title {
-  padding: 0;
-  padding-top: 75px;
+  padding-top: 70px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 75px;
   margin: 0;
-  text-align: center;
-  color: #000000;
-  background-color: #f1f1f1;
+  color: #010000;
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
-  outline: 1px solid blue;
+  text-align: center;
+  background-color: #f1f1f1;
 }
 
 @media (min-width: $tablet-width) {
   .inner-title {
     font-size: 43px;
     line-height: 50px;
+    padding-right: 85px;
+    padding-left: 85px;
+    padding-top: 40px;
+    padding-bottom: 70px;
   }
 }
 
@@ -23,5 +27,7 @@
   .inner-title {
     font-size: 53px;
     line-height: 57px;
+    padding-top: 45px;
+    padding-bottom: 100px;
   }
 }

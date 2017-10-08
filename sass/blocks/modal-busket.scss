@@ -1,9 +1,8 @@
 .modal-busket {
   outline: 1px solid gray;
   text-align: center;
-  min-width: 320px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
