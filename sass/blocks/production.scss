@@ -1,24 +1,126 @@
 .production {
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
   outline: 1px solid red;
 }
 
 .production__title {
-  padding: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 90px;
+  padding-right: 40px;
   margin: 0;
-  text-align: center;
   color: #000000;
   font-size: 17px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
-.production__wrapper {
-  padding-left: 30px;
+.production__inner {
+  padding-right: 40px;
+  padding-left: 35px;
+  outline: 1px solid green;
 }
 
 .production__text {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 13px;
-  line-height: 30px;
+  line-height: 24px;
+}
+
+.production__video {
+  display: block;
+  background-color: pink;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 25px;
+  outline: 1px solid red;
+}
+
+.production__busket {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .production {
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 65px;
+    background-color: #ffffff;
+  }
+
+  .production__wrapper {
+    position: relative;
+  }
+
+  .production__title {
+    position: absolute;
+    top: 490px;
+    left: 107px;
+    padding: 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .production__video {
+    height: 450px;
+    padding: 0;
+    margin-bottom: 95px;
+  }
+
+  .production__inner {
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-bottom: 45px;
+  }
+
+  .production__text {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 38px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production {
+    padding-bottom: 105px;
+  }
+
+  .production__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .production__title {
+    top: 96px;
+    left: 765px;
+    width: 75px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .production__inner {
+    width: 225px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 0;
+  }
+
+  .production__video {
+    width: 685px;
+    height: 455px;
+    margin-bottom: 0;
+  }
+
+  .production__text {
+    padding-top: 180px;
+    margin-bottom: 45px;
+  }
 }

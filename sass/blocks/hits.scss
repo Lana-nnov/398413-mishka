@@ -2,3 +2,19 @@
   padding: 0;
   margin: 0;
 }
+
+.hits__container {
+  padding-top: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .hits__container {
+    padding-top: 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hits__container {
+    padding-top: 70px;
+  }
+}

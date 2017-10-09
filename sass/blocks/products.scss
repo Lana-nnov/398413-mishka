@@ -5,6 +5,8 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
+  color: red;
+  outline: 1px solid pink;
 }
 
 .products__link--left {
@@ -17,6 +19,36 @@
 
 .products__link {
   display: block;
-  width: 100%;
+  padding-left: 30px;
+  padding-right: 132px;
+  padding-top: 27px;
+  padding-bottom: 27px;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .products {
+    display: flex;
+    font-size: 20px;
+    line-height: 30px;
+    outline: 1px solid green;
+  }
+
+  .products__item {
+    width: 50%;
+    flex-grow: 1;
+    outline: 1px solid red;
+  }
+
+  .products__link {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 185px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products__link {
+    padding-right: 350px;
+  }
 }

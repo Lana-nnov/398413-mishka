@@ -1,4 +1,17 @@
 .modal-busket {
   outline: 1px solid gray;
   text-align: center;
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-busket {
+    width: auto;
+    max-width: 568px;
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-bottom: 70px;
+    background-color: #ffffff;
+  }
 }

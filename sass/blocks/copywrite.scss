@@ -1,7 +1,30 @@
+.copywrite {
+  display: flex;
+}
+
 .copywrite__text {
   padding: 0;
+  padding-left: 30px;
   margin: 0;
+  width: 195px;
   color: #000000;
   font-size: 19px;
   font-weight: 700;
+  outline: 1px solid red;
+}
+
+.copywrite__logo {
+  padding-right: 70px;
+  width: 25px;
+  outline: 1px solid red;
+}
+
+@media (min-width: $tablet-width) {
+  .copywrite__text {
+    padding: 0;
+  }
+
+  .copywrite__logo {
+    padding-right: 0;
+  }
 }
