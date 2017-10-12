@@ -2,12 +2,80 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  border-top: 1px solid #ececec;
 }
 
 .site-list__link {
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 26px;
+  padding-left: 76px;
   color: #000000;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  border-bottom: 1px solid #ececec;
 
   &:hover {
     opacity: 0.6;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    border: none;
+  }
+
+  .site-list--add {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .site-list__item {
+    width: 167px;
+  }
+
+  .site-list__link {
+    padding-top: 21px;
+    padding-left: 0;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item:first-child {
+    width: 186px;
+  }
+
+  .site-list__item:nth-child(2) {
+    width: 200px;
+  }
+
+  .site-list__link {
+    padding-top: 19px;
+  }
+
+  .site-list__link--first {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-right: 1px solid #ececec;
+  }
+
+  .site-list__link--second {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 35px;
+    padding-right: 0;
+  }
+
+  .site-list__link--third {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .site-list__link--forth {
+    font-size: 15px;
+    line-height: 24px;
+    padding-left: 35px;
   }
 }

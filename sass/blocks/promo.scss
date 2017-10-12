@@ -2,9 +2,8 @@
   min-height: 312px;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% -20px;
   background-color: #fafafa;
-  outline: 1px solid blue;
 }
 
 .promo__container {
@@ -25,6 +24,10 @@
   text-align: center;
 }
 
+.promo__title-word {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .promo__title {
     font-size: 43px;
@@ -35,15 +38,23 @@
   }
 
   .promo__container {
-    padding-top: 100px;
+    padding-top: 155px;
   }
 
   .promo__inner {
     padding-top: 0;
   }
+
+  .promo__title-word {
+    display: inline;
+  }
 }
 
 @media (min-width: $desktop-width) {
+    .promo__container {
+      padding-top: 153px;
+    }
+
   .promo__title {
     font-size: 53px;
     line-height: 57px;

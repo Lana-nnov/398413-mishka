@@ -1,31 +1,40 @@
 .form-size {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 107px;
-  padding-right: 107px;
-  outline: 1px solid red;
+  justify-content: space-between;
 }
 
-.form-size__text {
-  width: 92px;
-  flex-grow: 1;
+.form-size__choice {
+  display: none;
+}
+
+.form-size__choice + .form-size__text {
+  width: 80px;
   color: #000000;
   font-size: 17px;
   line-height: 17px;
   font-weight: 700;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
+  cursor: pointer;
   border: 2px solid rgba(68, 68, 68, 0.1);
 }
 
-.form-size__text--active {
+.form-size__choice:checked + .form-size__text {
   border: 2px solid rgba(99, 209, 187, 1);
 }
 
 .form-size__send {
+  padding-bottom: 11px;
   width: 100%;
   color: #ffffff;
   background-color: #63d1bb;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form-size__choice + .form-size__text {
+    width: 110px;
+  }
 }

@@ -1,9 +1,10 @@
 .production {
-  padding-top: 30px;
+  margin-top: 30px;
   padding-bottom: 30px;
-  padding-right: 30px;
-  padding-left: 30px;
-  outline: 1px solid red;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-bottom: 65px;
+  border: 1px solid #ececec;
 }
 
 .production__title {
@@ -21,7 +22,6 @@
 .production__inner {
   padding-right: 40px;
   padding-left: 35px;
-  outline: 1px solid green;
 }
 
 .production__text {
@@ -38,20 +38,22 @@
   width: 100%;
   height: 150px;
   margin-bottom: 25px;
-  outline: 1px solid red;
 }
 
 .production__busket {
   display: block;
   width: 100%;
+  font-size: 17px;
+  line-height: 17px;
 }
 
 @media (min-width: $tablet-width) {
   .production {
-    padding-right: 0;
-    padding-left: 0;
-    padding-top: 0;
-    padding-bottom: 65px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 65px;
+    padding-bottom: 0;
     background-color: #ffffff;
   }
 
@@ -61,7 +63,7 @@
 
   .production__title {
     position: absolute;
-    top: 490px;
+    top: 495px;
     left: 107px;
     padding: 0;
     font-size: 20px;
@@ -69,7 +71,7 @@
   }
 
   .production__video {
-    height: 450px;
+    height: 457px;
     padding: 0;
     margin-bottom: 95px;
   }
@@ -89,7 +91,7 @@
 
 @media (min-width: $desktop-width) {
   .production {
-    padding-bottom: 105px;
+    margin-bottom: 105px;
   }
 
   .production__wrapper {
@@ -99,8 +101,8 @@
   }
 
   .production__title {
-    top: 96px;
-    left: 765px;
+    top: 92px;
+    left: 760px;
     width: 75px;
     font-size: 20px;
     line-height: 24px;
@@ -114,13 +116,13 @@
   }
 
   .production__video {
-    width: 685px;
-    height: 455px;
+    width: 680px;
+    height: 453px;
     margin-bottom: 0;
   }
 
   .production__text {
-    padding-top: 180px;
-    margin-bottom: 45px;
+    padding-top: 175px;
+    margin-bottom: 50px;
   }
 }

@@ -20,7 +20,6 @@ img {
 .container {
   margin: 0 auto;
   width: 320px;
-  outline: 1px solid black;
 }
 
 @media (min-width: $tablet-width) {
@@ -43,6 +42,5 @@ img {
     max-width: 1050px;
     padding-left: 100px;
     padding-right: 100px;
-    outline: 1px solid black;
   }
 }
