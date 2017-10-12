@@ -38,7 +38,7 @@
   color: #444444;
 }
 
-.contacts__email:after {
+.contacts__email::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -107,7 +107,7 @@
     width: 259px;
   }
 
-  .contacts__email:after {
+  .contacts__email::after {
     width: 205px;
   }
 
@@ -173,7 +173,7 @@
     margin-bottom: 29px;
   }
 
-  .contacts__email:after {
+  .contacts__email::after {
     width: 205px;
   }
 

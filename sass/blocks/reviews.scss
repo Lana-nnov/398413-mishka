@@ -137,6 +137,7 @@
   .reviews__write-link {
     width: 172px;
     float: right;
+    letter-spacing: -0.05em;
   }
 
   .reviews__item {
@@ -162,9 +163,5 @@
 
   .reviews__button {
     width: 175px;
-  }
-
-  .reviews__write-link {
-    letter-spacing: -0.05em;
   }
 }

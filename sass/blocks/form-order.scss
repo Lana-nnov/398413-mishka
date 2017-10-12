@@ -301,7 +301,7 @@
     top: -15px;
     width: 48px;
     height: 48px;
-}
+  }
 
   .form-order__step-first:checked + .form-order__text::after {
     top: 0;
@@ -507,7 +507,7 @@
   }
 
   .form-order__name--phone,
-  .form-order__name--email  {
+  .form-order__name--email {
     padding-top: 5px;
   }
 
