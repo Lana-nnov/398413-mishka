@@ -1,12 +1,11 @@
 .choice {
-  outline: 1px solid red;
   padding-left: 30px;
   padding-right: 30px;
 }
 
 .choice__headline {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 22px;
   padding: 0;
   color: #000000;
   font-size: 25px;
@@ -23,6 +22,7 @@
   display: block;
   margin: 0;
   padding: 0;
+  padding-top: 5px;
   color: #63d1bb;
   font-size: 17px;
   line-height: 20px;
@@ -33,7 +33,7 @@
 .choice__description {
   padding: 0;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   font-size: 15px;
   line-height: 24px;
 }
@@ -47,9 +47,9 @@
 
 .choice__item {
   display: flex;
+  justify-content: space-between;
   padding-top: 5px;
   padding-bottom: 5px;
-  outline: 1px solid green;
 }
 
 .choice__title,
@@ -58,9 +58,17 @@
   margin: 0;
 }
 
+.choice__title {
+  width: 90px;
+}
+
+.choice__param {
+  width: 162px;
+}
+
 .choice__price {
   padding: 0;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -68,6 +76,8 @@
 
 .choice__order {
   display: block;
+  font-size: 17px;
+  line-height: 20px;
   box-sizing: border-box;
 }
 
@@ -77,6 +87,7 @@
   left: 0;
   width: 100%;
   text-align: center;
+  letter-spacing: 0.05em;
 }
 
 @media (min-width: $tablet-width) {
@@ -99,18 +110,16 @@
 
   .choice__intro {
     position: absolute;
-    top: 12px;
-    right: -198px;
+    top: 5px;
+    right: -220px;
     width: 80px;
     text-align: center;
-    outline: 1px solid red;
   }
 
   .choice__wrapper {
     position: static;
     display: flex;
     padding-bottom: 0;
-    outline: 1px solid red;
   }
 
   .choice__text {
@@ -136,11 +145,14 @@
     line-height: 20px;
   }
 
+  .choice__param {
+    width: 190px;
+  }
+
   .choice__img {
     padding-top: 107px;
     width: 334px;
     height: 404px;
-    outline: 1px solid red;
   }
 
   .choice__bottom {
@@ -151,6 +163,7 @@
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 35px;
+    letter-spacing: 0.01em;
   }
 
   .choice__order {
@@ -173,7 +186,7 @@
   }
 
   .choice__intro {
-    top: 15px;
+    top: 10px;
     left: -127px;
     font-size: 17px;
     line-height: 17px;
@@ -189,14 +202,17 @@
     width: 525px;
     height: 638px;
     padding: 0;
-    outline: 1px solid red;
   }
 
   .choice__description {
-    margin-bottom: 52px;
+    margin-bottom: 50px;
   }
 
   .choice__list {
     margin-bottom: 110px;
+  }
+
+  .choice__param {
+    width: 198px;
   }
 }
