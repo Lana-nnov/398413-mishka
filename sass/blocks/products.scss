@@ -27,22 +27,39 @@
 
 @media (min-width: $tablet-width) {
   .products {
+    position: relative;  
     display: flex;
     font-size: 20px;
     line-height: 30px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat;
   }
+
+  .products::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: -20px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+    height: 27px;
+    width: 780px;
+    clip: rect(0, 688px, 20px, 0);
+  }
+  
 
   .products__item {
     width: 50%;
     flex-grow: 1;
-  }
+  }  
 
   .products__link {
     padding-top: 25px;
     padding-bottom: 35px;
     padding-right: 185px;
     padding-left: 38px;
-  }
+  }  
 }
 
 @media (min-width: $desktop-width) {
@@ -50,5 +67,14 @@
     padding-top: 28px;
     padding-bottom: 32px;
     padding-right: 350px;
+  }
+  
+  .products::after {
+    left: -100px;
+    bottom: -22px;
+    height: 40px;
+    width: 1250px;
+    clip: auto;
+    clip: rect(0, 1150px, 20px, 100px);
   }
 }

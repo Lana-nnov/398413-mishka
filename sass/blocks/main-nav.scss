@@ -10,6 +10,14 @@
   padding-top: 24px;
   padding-bottom: 15px;
   text-align: center;
+  
+  &:hover {
+    opacity: 0.6;
+  }
+  
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__logo-img {
@@ -66,8 +74,7 @@
   width: 100%;
 }
 
-.main-nav__list-add {
-  display: none;
+.main-nav__list {
   margin: 0;
   padding: 0;
 }
@@ -120,32 +127,32 @@
   }
 
   .main-nav__wrapper {
+    width: 670px;
     display: flex;
     flex-wrap: wrap;
   }
 
-  .main-nav__list-user {
-    width: 668px;
-    order: 0;
+  .main-nav__info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 349px;
   }
 
   .main-nav__list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 334px;
-    height: 1px;
-    order: 1;
+    width: 321px;
   }
 
   .main-nav__text {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 334px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 347px;
     height: 0;
     order: 2;
     font-size: 15px;
     line-height: 24px;
+    text-align: right;
   }
 
   .main-nav__corner-text {
@@ -156,35 +163,22 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__logo {
-    top: 0;
+    top: -15px;
     left: 50%;
-    margin-left: -18px;
+    margin-left: -75px;
+  }
+
+  .main-nav__wrapper {
+    width: 1050px;
+  }
+
+  .main-nav__info {
+    width: 525px;
   }
 
   .main-nav__list {
-    display: block;
     width: 525px;
     height: auto;
-    order: -1;
-  }
-
-  .main-nav__list-user {
-    width: 525px;
-    padding: 0;
-    order: 0;
-  }
-
-  .main-nav__list-site {
-    width: 525px;
-    order: -2;
-  }
-
-  .main-nav__list-add {
-    display: flex;
-    flex-wrap: wrap;
-    width: 525px;
-    height: 1px;
-    order: 1;
   }
 
   .main-nav__text {
