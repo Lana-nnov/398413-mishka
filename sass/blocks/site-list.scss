@@ -11,14 +11,25 @@
   padding-bottom: 26px;
   padding-left: 76px;
   color: #000000;
-  font-size: 17px;
-  line-height: 24px;
   font-weight: 700;
   border-bottom: 1px solid #ececec;
 
   &:hover {
     opacity: 0.6;
   }
+
+  &:hover {
+    active: 0.3;
+  }
+}
+
+.site-list__link--main {
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.site-list__item--add {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -26,56 +37,92 @@
     border: none;
   }
 
-  .site-list--add {
+  .site-list {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: flex-end;
   }
 
   .site-list__item {
-    width: 167px;
+    width: 160px;
+  }
+
+  .site-list__item:nth-child(3),
+  .site-list__item:nth-child(4) {
+    height: 0;
+  }
+
+  .site-list__item:nth-child(4) {
+    width: 155px;
+    padding-left: 5px;
   }
 
   .site-list__link {
-    padding-top: 21px;
+    padding-top: 34px;
+    padding-bottom: 0;
     padding-left: 0;
     border: none;
+}
+
+  .site-list__link--main,
+  .site-list__link--add {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .site-list__item--add {
+    display: block;
+    visibility: hidden;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .site-list__item:first-child {
-    width: 186px;
-  }
-
-  .site-list__item:nth-child(2) {
-    width: 200px;
+  .site-list__item {
+    width: 185px;
   }
 
   .site-list__link {
-    padding-top: 19px;
+    padding-top: 20px;
+    padding-bottom: 30px;
   }
 
-  .site-list__link--first {
-    padding-top: 32px;
-    padding-bottom: 32px;
+  .site-list__item:nth-child(2n) {
+    padding-left: 35px;
+    width: 155px;
+  }
+
+  .site-list__item:first-child,
+  .site-list__item:nth-child(2) {
+    height: 0;
+  }
+
+  .site-list__item:nth-child(4) {
+    width: 186px;
+  }
+
+  .site-list__item:nth-child(3),
+  .site-list__item:nth-child(4) {
+    padding-top: 10px;
+    height: auto;
+    order: -1;
+  }
+
+  .site-list__item:nth-child(3) {
     border-right: 1px solid #ececec;
   }
 
-  .site-list__link--second {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 35px;
-    padding-right: 0;
-  }
-
-  .site-list__link--third {
-    font-size: 15px;
+  .site-list__link--main {
+    font-size: 17px;
     line-height: 24px;
   }
 
-  .site-list__link--forth {
+  .site-list__item--add {
+    display: block;
+    visibility: visible;
+  }
+
+  .site-list__link--add {
     font-size: 15px;
     line-height: 24px;
-    padding-left: 35px;
   }
 }
