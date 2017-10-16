@@ -27,7 +27,7 @@
 
 @media (min-width: $tablet-width) {
   .products {
-    position: relative;  
+    position: relative;
     display: flex;
     font-size: 20px;
     line-height: 30px;
@@ -47,19 +47,18 @@
     width: 780px;
     clip: rect(0, 688px, 20px, 0);
   }
-  
 
   .products__item {
     width: 50%;
     flex-grow: 1;
-  }  
+  }
 
   .products__link {
     padding-top: 25px;
     padding-bottom: 35px;
     padding-right: 185px;
     padding-left: 38px;
-  }  
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -68,7 +67,7 @@
     padding-bottom: 32px;
     padding-right: 350px;
   }
-  
+
   .products::after {
     left: -100px;
     bottom: -22px;
