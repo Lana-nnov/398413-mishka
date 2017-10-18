@@ -200,7 +200,7 @@
 }
 
 .form-order__connection {
-    position: relative;
+  position: relative;
 }
 
 .form-order__add {
@@ -257,20 +257,20 @@
 }
 
 .form-order__svg {
-    position: absolute;
-    top: -2px;
-    right: 2px;
-    opacity: 0.2;
+  position: absolute;
+  top: -2px;
+  right: 2px;
+  opacity: 0.2;
 }
 
 .form-order__svg--mail {
-    top: -2px;
-    right: 2px;
+  top: -2px;
+  right: 2px;
 }
 
 .form-order__svg--phone {
-    top: -2px;
-    right: 5px;
+  top: -2px;
+  right: 5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -495,11 +495,11 @@
   }
 
   .form-order__svg--mail {
-      right: 20px;
+    right: 20px;
   }
 
   .form-order__svg--phone {
-      right: 23px;
+    right: 23px;
   }
 }
 
@@ -587,10 +587,10 @@
   }
 
   .form-order__svg--mail {
-      right: 5px;
+    right: 5px;
   }
 
   .form-order__svg--phone {
-      right: 10px;
+    right: 10px;
   }
 }

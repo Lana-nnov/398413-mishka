@@ -171,7 +171,12 @@
   }
 
   .contacts__container {
-    box-sizing: content-box;
+    box-sizing: content-box;    
+    padding-top: 0;
+    padding-left: 170px;
+    padding-right: 0;
+    padding-bottom: 100px;
+    width: 350px;
   }
 
   .contacts__block {
@@ -181,15 +186,7 @@
     margin: 0 auto;
     padding-top: 70px;
     padding-bottom: 0;
-  }
-
-  .contacts__container {
-    padding-top: 0;
-    padding-left: 170px;
-    padding-right: 0;
-    padding-bottom: 100px;
-    width: 350px;
-  }
+  }  
 
   .contacts__map {
     width: 525px;
