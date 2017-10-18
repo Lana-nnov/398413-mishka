@@ -44,6 +44,11 @@
     }
   }
 
+  .promo__container {
+    position: relative;
+    z-index: 1;
+  }
+
   .promo__title {
     font-size: 43px;
     line-height: 50px;
@@ -70,7 +75,7 @@
   .promo {
     background-image: url("../img/hero-desktop@1x.jpg");
     background-position: 50% 0;
-    background-size: 82% 100%;
+    background-size: 1250px 100%;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
