@@ -10,8 +10,6 @@
 
 .form-order__field {
   padding: 0;
-  padding-right: 30px;
-  padding-left: 30px;
   margin: 0;
   border: none;
 }
@@ -201,6 +199,10 @@
   padding-top: 10px;
 }
 
+.form-order__connection {
+    position: relative;
+} 
+
 .form-order__add {
   padding-top: 15px;
   padding-right: 70px;
@@ -254,6 +256,23 @@
   padding-bottom: 17px;
 }
 
+.form-order__svg {
+    position: absolute;
+    top: -2px;
+    right: 2px;
+    opacity: 0.2;
+}
+
+.form-order__svg--mail {
+    top: -2px;
+    right: 2px;
+}
+
+.form-order__svg--phone {
+    top: -2px;
+    right: 5px;
+}
+
 @media (min-width: $tablet-width) {
   .form-order__field--white {
     background-color: #ffffff;
@@ -264,26 +283,33 @@
   }
 
   .form-order__info {
-    padding-top: 85px;
+    padding-top: 62px;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 0;
+    padding-bottom: 5px;
     font-size: 17px;
     line-height: 30px;
   }
 
-  .form-order__wrapper,
-  .form-order__wrap {
+  .form-order__wrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     padding-left: 0;
     padding-right: 0;
+    padding-top: 66px;
     padding-bottom: 10px;
+    width: 100%;
   }
-
-  .form-order__wrapper {
-    padding-top: 68px;
+  
+  .form-order__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 0;
+    padding-right: 0;    
+    padding-top: 23px;
+    padding-bottom: 46px;
   }
 
   .form-order__text {
@@ -309,6 +335,10 @@
     width: 22px;
     height: 22px;
   }
+  
+  .form-order__name--item {
+    margin-bottom: 0;
+  } 
 
   .form-order__step-second + .form-order__text {
     margin-right: 27px;
@@ -322,6 +352,10 @@
 
   .form-order__text--checkbox:nth-child(4n) {
     margin-right: 0;
+  }
+  
+  .form-order__text--checkbox:last-child {
+    padding-bottom: 5px;
   }
 
   .form-order__step-second + .form-order__text::before {
@@ -338,7 +372,7 @@
   .form-order__text--name {
     padding-right: 20px;
     padding-bottom: 5px;
-  }
+  } 
 
   .form-order__name {
     position: static;
@@ -373,12 +407,7 @@
 
   .form-order__connection {
     width: 500px;
-  }
-
-  .form-order__wrap {
-    padding-top: 20px;
-    padding-bottom: 46px;
-  }
+  }     
 
   .form-order__name--email {
     padding-top: 0;
@@ -410,16 +439,16 @@
   .form-order__name-info {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 40px;
+    margin-bottom: 37px;
   }
 
   .form-order__name-info:last-child {
-    margin-bottom: 37px;
+    margin-bottom: 39px;
   }
 
   .form-order__fullname {
     padding-top: 0;
-    padding-left: 20px;
+    padding-left: 20px;    
     width: 330px;
     order: 1;
     flex-grow: 1;
@@ -440,7 +469,8 @@
   .form-order__bottom {
     display: flex;
     align-items: start;
-    padding-bottom: 30px;
+    padding-top: 3px;
+    padding-bottom: 32px;
     padding-right: 0;
     padding-left: 0;
     justify-content: space-between;
@@ -463,6 +493,14 @@
   .form-order__name::after {
     width: 0;
   }
+
+  .form-order__svg--mail {      
+      right: 20px;
+  }
+
+  .form-order__svg--phone {      
+      right: 23px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -474,7 +512,7 @@
   .form-order__info {
     padding-left: 175px;
     padding-right: 200px;
-    padding-top: 122px;
+    padding-top: 100px;
     padding-bottom: 12px;
   }
 
@@ -499,11 +537,23 @@
     margin-right: 27px;
     width: 150px;
   }
+  
+  .form-order__text--checkbox:last-child {
+    padding-bottom: 0;
+  }
 
   .form-order__fullname {
     margin-right: 175px;
     width: 401px;
     order: 1;
+  }
+  
+  .form-order__name-info {    
+    margin-bottom: 38px;
+  }
+  
+  .form-order__wrap {    
+    padding-top: 20px;
   }
 
   .form-order__name--phone,
@@ -533,5 +583,14 @@
   .form-order__bottom {
     padding-left: 175px;
     padding-right: 175px;
+    padding-bottom: 30px;
+  }
+  
+  .form-order__svg--mail {
+      right: 5px;
+  }
+
+  .form-order__svg--phone {
+      right: 10px;
   }
 }

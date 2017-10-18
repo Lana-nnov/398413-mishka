@@ -148,6 +148,7 @@
   }
 
   .shop__text {
+    padding-top: 23px;
     width: 316px;
   }
 
@@ -167,6 +168,11 @@
   }
 
   .shop__bottom {
+    left: 0;
+  }
+
+  .shop-busket__svg {
+    top: 0;
     left: 0;
   }
 }

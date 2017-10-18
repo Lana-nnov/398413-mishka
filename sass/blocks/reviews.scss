@@ -62,7 +62,7 @@
 
 .reviews__svg {
   position: absolute;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 .reviews__svg--left {
@@ -145,20 +145,20 @@
   .reviews__button {
     width: 169px;
   }
-  
+
   .reviews__prev,
   .reviews__next {
     width: 83.5px;
-    border: none;    
-  }  
-  
+    border: none;
+  }
+
   .reviews__svg--left {
     top: 14px;
     left: 14px;
   }
 
   .reviews__svg--right {
-    top: 14px;  
+    top: 14px;
     right: 12px;
   }
 }
@@ -208,8 +208,8 @@
   .reviews__name {
     letter-spacing: 0.01em;
   }
- 
-  .reviews__svg--right {      
+
+  .reviews__svg--right {
     right: 18px;
-  }  
+  }
 }
