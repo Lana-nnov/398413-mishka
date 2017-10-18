@@ -92,7 +92,7 @@
 @media (min-width: $tablet-width) {
   .contacts__container {
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     padding-top: 65px;
     padding-bottom: 60px;
   }
@@ -122,7 +122,7 @@
   .contacts__email::after {
     width: 205px;
   }
-  
+
   .contacts__info {
     margin-right: 3px;
   }
@@ -154,7 +154,7 @@
   .contacts__container-write {
     bottom: 58px;
   }
-  
+
   .contacts__svg {
     display: block;
     position: absolute;
@@ -170,7 +170,7 @@
     background-color: #ffffff;
   }
 
-   .contacts__container {
+  .contacts__container {
     box-sizing: content-box;
   }
 
