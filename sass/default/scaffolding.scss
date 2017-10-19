@@ -6,6 +6,7 @@ body {
   color: #444444;
   font-size: 15px;
   line-height: 30px;
+  font-weight: 500;
 }
 
 a {
@@ -31,15 +32,16 @@ img {
 
   .container {
     width: auto;
-    max-width: 668px;
+    max-width: 768px;
     padding-left: 50px;
     padding-right: 50px;
+    box-sizing: border-box;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    max-width: 1050px;
+    max-width: 1250px;
     padding-left: 100px;
     padding-right: 100px;
   }

@@ -1,5 +1,5 @@
 .reviews__container {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .reviews__list {
@@ -25,7 +25,7 @@
 
 .reviews__author {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
   color: #000000;
   font-size: 17px;
   line-height: 24px;
@@ -44,8 +44,35 @@
 }
 
 .reviews__button {
-  margin-bottom: 40px;
+  position: relative;
+  display: flex;
+  margin-bottom: 38px;
   height: 53px;
+}
+
+.reviews__prev,
+.reviews__next {
+  width: 130px;
+  height: 53px;
+  font-size: 0;
+  background-color: #ffffff;
+  border: 1px solid #f1f1f1;
+  cursor: pointer;
+}
+
+.reviews__svg {
+  position: absolute;
+  cursor: pointer;
+}
+
+.reviews__svg--left {
+  top: 12px;
+  left: 38px;
+}
+
+.reviews__svg--right {
+  top: 12px;
+  right: 42px;
 }
 
 .reviews__write-link {
@@ -58,7 +85,7 @@
 @media (min-width: $tablet-width) {
   .reviews__container {
     padding-top: 77px;
-    padding-bottom: 90px;
+    padding-bottom: 80px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -72,6 +99,7 @@
   .reviews__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0;
   }
 
@@ -84,7 +112,7 @@
   }
 
   .reviews__item {
-    padding-top: 46px;
+    padding-top: 44px;
     padding-bottom: 50px;
     margin-bottom: 10px;
     width: 668px;
@@ -115,18 +143,33 @@
   }
 
   .reviews__button {
-    width: 334px;
-    flex-grow: 1;
+    width: 169px;
+  }
+
+  .reviews__prev,
+  .reviews__next {
+    width: 83.5px;
+    border: none;
+  }
+
+  .reviews__svg--left {
+    top: 14px;
+    left: 14px;
+  }
+
+  .reviews__svg--right {
+    top: 14px;
+    right: 12px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews__container {
-    padding-top: 70px;
+    padding-top: 72px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: 100px 0;
-    padding-bottom: 140px;
+    padding-bottom: 130px;
   }
 
   .reviews__list {
@@ -166,7 +209,7 @@
     letter-spacing: 0.01em;
   }
 
-  .reviews__button {
-    width: 175px;
+  .reviews__svg--right {
+    right: 18px;
   }
 }

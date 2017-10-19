@@ -1,6 +1,6 @@
 .advantages__container {
-  padding-top: 23px;
-  padding-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 57px;
   background-color: #ffffff;
 }
 
@@ -9,7 +9,6 @@
   padding-right: 30px;
   padding-left: 30px;
   margin: 0;
-  margin-bottom: 30px;
   color: #000000;
   font-size: 25px;
   line-height: 30px;
@@ -31,9 +30,45 @@
 }
 
 .advantages__item {
-  padding-top: 55px;
-  padding-bottom: 29px;
+  position: relative;
+  padding-top: 83px;
+  padding-bottom: 0;
   padding-right: 50px;
+}
+
+.advantages__svg {
+  position: absolute;
+  fill: #6dd4bf;
+}
+
+.advantages__svg--eco {
+  top: 32px;
+  left: 8px;
+}
+
+.advantages__svg--style {
+  top: 32px;
+  left: 0;
+}
+
+.advantages__svg--likes {
+  top: 38px;
+  left: 8px;
+}
+
+.advantages__svg--handmade {
+  top: 35px;
+  left: 4px;
+}
+
+.advantages__svg--support {
+  top: 35px;
+  left: -4px;
+}
+
+.advantages__svg--pack {
+  top: 35px;
+  left: 3px;
 }
 
 .advantages__item:first-child {
@@ -55,7 +90,8 @@
 
 @media (min-width: $tablet-width) {
   .advantages__container {
-    padding-top: 10px;
+    padding-top: 0;
+    padding-bottom: 30px;
   }
 
   .advantages__wrapper {
@@ -106,11 +142,41 @@
   .advantages__item--third {
     order: 2;
   }
+
+  .advantages__svg--eco {
+    top: 8px;
+    left: 10px;
+  }
+
+  .advantages__svg--style {
+    top: 8px;
+    left: 2px;
+  }
+
+  .advantages__svg--likes {
+    top: 10px;
+    left: 10px;
+  }
+
+  .advantages__svg--handmade {
+    top: 8px;
+    left: 5px;
+  }
+
+  .advantages__svg--support {
+    top: 8px;
+    left: -4px;
+  }
+
+  .advantages__svg--pack {
+    top: 8px;
+    left: 3px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .advantages__container {
-    padding-top: 25px;
+    padding-top: 13px;
     padding-bottom: 40px;
   }
 
@@ -133,5 +199,15 @@
 
   .advantages__item:nth-child(3) {
     padding-right: 120px;
+  }
+
+  .advantages__svg--eco {
+    top: 5px;
+    left: 9px;
+  }
+
+  .advantages__svg--likes {
+    top: 12px;
+    left: 9px;
   }
 }

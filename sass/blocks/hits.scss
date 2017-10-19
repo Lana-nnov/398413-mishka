@@ -7,14 +7,34 @@
   padding-top: 30px;
 }
 
+.hits__svg {
+  display: block;
+  width: 320px;
+  height: 10px;
+  margin: 0 auto;
+  transform: rotate(180deg);
+}
+
 @media (min-width: $tablet-width) {
   .hits__container {
     padding-top: 42px;
+  }
+
+  .hits__svg {
+    display: block;
+    width: 768px;
+    height: 15px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .hits__container {
     padding-top: 70px;
+  }
+
+  .hits__svg {
+    width: 1050px;
+    height: 21px;
   }
 }

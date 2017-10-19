@@ -17,10 +17,6 @@
   &:hover {
     opacity: 0.6;
   }
-
-  &:hover {
-    active: 0.3;
-  }
 }
 
 .site-list__link--main {
@@ -35,12 +31,8 @@
 @media (min-width: $tablet-width) {
   .site-list {
     border: none;
-  }
-
-  .site-list {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: flex-end;
   }
 
   .site-list__item {
@@ -62,7 +54,7 @@
     padding-bottom: 0;
     padding-left: 0;
     border: none;
-}
+  }
 
   .site-list__link--main,
   .site-list__link--add {
