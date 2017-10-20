@@ -75,6 +75,15 @@
   right: 42px;
 }
 
+.reviews__svg-line {
+  display: block;
+  width: 320px;
+  height: 10px;
+  margin: 0 auto;
+  transform: rotate(180deg);
+  fill: #f1f1f1;
+}
+
 .reviews__write-link {
   display: block;
   width: 100%;
@@ -161,6 +170,13 @@
     top: 14px;
     right: 12px;
   }
+
+  .reviews__svg-line {
+    display: block;
+    width: 768px;
+    height: 15px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -211,5 +227,10 @@
 
   .reviews__svg--right {
     right: 18px;
+  }
+
+  .reviews__svg-line {
+    width: 1050px;
+    height: 21px;
   }
 }

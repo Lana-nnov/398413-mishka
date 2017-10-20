@@ -4,10 +4,14 @@
     <meta charset="utf-8">
     <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/picturefill.js" async></script>
+    <script src="js/picturefill.js" async=""></script>
     <title>Интернет-магазин "Мишка"</title>
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <!--
     <svg style="display:none">
     <symbol viewBox="-0.8 -0.8 17.6 17.6" id="icon-search">
     <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
@@ -144,6 +148,7 @@
     </g>
     </symbol>
     </svg>
+    -->
     <header class="page-header">
       <div class="page-header__container container">
         <nav class="main-nav main-nav--nojs">
@@ -185,7 +190,7 @@
                 <li class="user-list__item">
                   <a class="user-list__busket busket" href="#">Корзина: пока пуста</a>
                   <svg class="user-list__svg" width="20.294" height="18.849">
-                    <use xlink:href="#icon-busket"></use>
+                    <use xlink:href="#icon-cart"></use>
                   </svg>
                 </li>
               </ul>
@@ -200,16 +205,16 @@
     <main class="page-main">
       <section class="promo">
         <div class="promo__container container">
-          <h1 class="promo__title">Милые штуки <span class="promo__title-word">ручной</span> работы для дома</h1>
+          <h1 class="promo__title">Милые штуки<span class="promo__title-word">ручной</span> работы для дома</h1>
           <ul class="promo__products products">
             <li class="products__item">
-              <a class="products__link products__link--left" href="#">Предметы интерьера</a>
+              <a class="products__link products__link--left" href="interior-products.html">Предметы интерьера</a>
               <svg class="products__link__svg products__link__svg--left" width="40.219" height="62.411">
                 <use xlink:href="#icon-interior"></use>
               </svg>
             </li>
             <li class="products__item">
-              <a class="products__link products__link--right" href="#">Детские игрушки</a>
+              <a class="products__link products__link--right" href="toys-products.html">Детские игрушки</a>
               <svg class="products__link__svg products__link__svg--right" width="60" height="59.62">
                 <use xlink:href="#icon-toy"></use>
               </svg>
@@ -255,7 +260,7 @@
           </article>
         </div>
         <svg class="hits__svg" width="1150" height="23">
-          <use xlink:href="#zigzag-line"></use>
+          <use xlink:href="#icon-bg-zigzag-line"></use>
         </svg>
       </section>
       <section class="advantages">
@@ -266,37 +271,37 @@
               <li class="advantages__item">
                 <p class="advantages__description advantages__description--eco">Экологически чистые материалы</p>
                 <svg class="advantages__svg advantages__svg--eco" width="31.972" height="37.301">
-                  <use xlink:href="#icon-flower"></use>
+                  <use class="advantages__use" xlink:href="#icon-feature-flower"></use>
                 </svg>
               </li>
               <li class="advantages__item advantages__item--second">
                 <p class="advantages__description advantages__description--style">Скандинавский стиль по российской цене</p>
                 <svg class="advantages__svg advantages__svg--style" width="46.575" height="27.332">
-                  <use xlink:href="#icon-money"></use>
+                  <use xlink:href="#icon-feature-money"></use>
                 </svg>
               </li>
               <li class="advantages__item advantages__item--third">
                 <p class="advantages__description advantages__description--likes">Увеличивает лайки на фотографиях</p>
                 <svg class="advantages__svg advantages__svg--likes" width="33.05" height="27.857">
-                  <use xlink:href="#icon-heart"></use>
+                  <use xlink:href="#icon-feature-heart"></use>
                 </svg>
               </li>
               <li class="advantages__item">
                 <p class="advantages__description advantages__description--handmade">Связано вручную с любовью и умилением</p>
                 <svg class="advantages__svg advantages__svg--handmade" width="34.373" height="34.373">
-                  <use xlink:href="#icon-ball"></use>
+                  <use xlink:href="#icon-feature-ball"></use>
                 </svg>
               </li>
               <li class="advantages__item advantages__item--second">
                 <p class="advantages__description advantages__description--support">Поддержка отечественного производителя</p>
                 <svg class="advantages__svg advantages__svg--support" width="54.156" height="23.183">
-                  <use xlink:href="#icon-rocket"></use>
+                  <use xlink:href="#icon-feature-rocket"></use>
                 </svg>
               </li>
               <li class="advantages__item advantages__item--third">
                 <p class="advantages__description advantages__description--pack">Поставляется в подарочной упаковке</p>
                 <svg class="advantages__svg advantages__svg--pack" width="32.666" height="32.486">
-                  <use xlink:href="#icon-gift"></use>
+                  <use xlink:href="#icon-feature-gift"></use>
                 </svg>
               </li>
             </ul>
@@ -318,19 +323,19 @@
               <button class="reviews__prev" type="button">Назад</button>
               <button class="reviews__next" type="button">Вперед</button>
               <svg class="reviews__svg reviews__svg--right" width="50" height="26.003">
-                <use xlink:href="#right-arrow"></use>
+                <use xlink:href="#icon-right-arrow"></use>
               </svg>
               <svg class="reviews__svg reviews__svg--left" width="50" height="26.003">
-                <use xlink:href="#left-arrow"></use>
+                <use xlink:href="#icon-left-arrow"></use>
               </svg>
             </div>
             <div class="reviews__write">
-              <a class="reviews__write-link button" href="#">Написать</a>
+              <a class="reviews__write-link button" href="reviews-write.html">Написать</a>
             </div>
           </div>
         </div>
-        <svg class="hits__svg" width="1150" height="23">
-          <use xlink:href="#zigzag-line"></use>
+        <svg class="reviews__svg-line" width="1150" height="23">
+          <use xlink:href="#icon-bg-zigzag-line"></use>
         </svg>
       </section>
       <section class="contacts">
@@ -347,12 +352,12 @@
               </p>
           </div>
           <div class="contacts__container-write">
-            <a class="contacts__write button" href="mailto:info@mimimishkashop.ru">Напишите нам</a>
+            <a class="contacts__write button" href="contacts-form.html">Напишите нам</a>
           </div>
-          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123775!2d30.320894615835055!3d59.938796869048254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1507960523808" style="border:0" allowfullscreen>
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123775!2d30.320894615835055!3d59.938796869048254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1507960523808" style="border:0" allowfullscreen="">
           </iframe>
           <svg class="contacts__svg" width="46.68" height="81.691">
-            <use xlink:href="#flag"></use>
+            <use xlink:href="#icon-flag"></use>
           </svg>
         </div>
       </section>
