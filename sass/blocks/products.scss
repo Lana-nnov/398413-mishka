@@ -8,11 +8,11 @@
   font-weight: bold;
 }
 
-.products__link--left {
+.products__item--left {
   background-color: #63d1bb;
 }
 
-.products__link--right {
+.products__item--right {
   background-color: #56c3b2;
 }
 
@@ -24,6 +24,34 @@
   padding-bottom: 27px;
   color: #ffffff;
   letter-spacing: 0.05em;
+}
+
+.products__item:hover .products__link--left {
+  position: relative;
+  top: -5px;
+  background-color: #63d1bb;
+}
+
+.products__item:hover .products__link--right {
+  position: relative;
+  top: -5px;
+  background-color: #56c3b2;
+}
+
+.products__item:hover .products__link__svg--left {
+  top: 18px;
+}
+
+.products__item:hover .products__link__svg--right {
+  bottom: 25px;
+}
+
+.products__item:active .products__link__svg {
+  opacity: 0.3;
+}
+
+.products__item:active .products__text {
+  opacity: 0.3;
 }
 
 .products__link__svg {
