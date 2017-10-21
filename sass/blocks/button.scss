@@ -8,3 +8,13 @@
   padding-top: 14px;
   padding-bottom: 14px;
 }
+
+.button:hover {
+  color: #ffffff;
+  background-color: #444444;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #444444;
+}
