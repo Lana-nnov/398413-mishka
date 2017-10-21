@@ -12,6 +12,7 @@ var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var rename = require("gulp-rename");
+var minjs = require("gulp-uglify");
 var del = require("del");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
@@ -28,6 +29,14 @@ gulp.task("style", function() {
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+
+gulp.task("script", function() {
+  gulp.src("js/script.js")
+    .pipe(minjs())
+    .pipe(gulp.dest("build/js"))
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("sprite", function() {
@@ -92,5 +101,5 @@ gulp.task ("copy", function() {
 });
 
 gulp.task("build", function(done) {
-  run("clean", "copy", "style", "sprite", "html", done);
+  run("clean", "copy", "style", "sprite", "script", "html", done);
 });
