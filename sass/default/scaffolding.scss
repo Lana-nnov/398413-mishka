@@ -39,10 +39,30 @@ img {
   }
 }
 
+@media (min-width: 768px) and (max-width: 785px) {
+  .container {
+    width: 668px;  
+    padding-left: 0;
+    padding-right: 0;
+    background-color: green;
+  }  
+}
+
 @media (min-width: $desktop-width) {
   .container {
-    max-width: 1250px;
-    padding-left: 100px;
-    padding-right: 100px;
+    max-width: 1150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    outline: 1px solid black;
+  }
+}
+
+@media (min-width: 1150px) and (max-width: 1170px) {
+  .container {
+    width: 1050px;  
+    padding-left: 0;
+    padding-right: 0;
+    background-color: pink;
   }
 }
