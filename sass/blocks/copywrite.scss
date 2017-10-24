@@ -14,6 +14,22 @@
   font-weight: 700;
 }
 
+.copywrite__logo-svg {
+  fill: #63d1bb;
+}
+
+.copywrite__logo:hover .copywrite__logo-svg {
+  fill: #46c1ae;
+}
+
+.copywrite__logo:focus .copywrite__logo-svg {
+  fill: #46c1ae;
+}
+
+.copywrite__logo:focus .copywrite__logo-svg {
+  fill: rgba(98, 209, 186, 0.3);
+}
+
 .copywrite__logo {
   padding-right: 70px;
   padding-left: 0;
@@ -29,5 +45,6 @@
 
   .copywrite__logo {
     padding-right: 0;
+    padding-top: 5px;
   }
 }
