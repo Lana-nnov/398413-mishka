@@ -28,6 +28,7 @@
   color: #63d1bb;
   font-size: 17px;
   line-height: 17px;
+  height: 17px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -75,20 +76,28 @@
 
 .form-order__step-first,
 .form-order__step-second {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .form-order__step-first + .form-order__text,
 .form-order__step-second + .form-order__text {
   display: block;
   position: relative;
-  padding-left: 60px;  
+  padding-left: 60px;
   cursor: pointer;
 }
 
 .form-order__step-second + .form-order__text {
   height: 18px;
-  background-color: red;
 }
 
 .form-order__step-first + .form-order__text::before {
@@ -101,6 +110,30 @@
   height: 35px;
   border: 2px solid #000000;
   border-radius: 50%;
+}
+
+.form-order__step-first:hover + .form-order__text::before {
+  border: 2px solid #62d1ba;
+}
+
+.form-order__step-first:focus + .form-order__text::before {
+  border: 2px solid #62d1ba;
+}
+
+.form-order__step-first:active + .form-order__text::before {
+  border: 2px solid rgba(68, 68, 68, 0.3);
+}
+
+.form-order__step-second:hover + .form-order__text::before {
+  border: 2px solid #62d1ba;
+}
+
+.form-order__step-second:focus + .form-order__text::before {
+  border: 2px solid #62d1ba;
+}
+
+.form-order__step-second:active + .form-order__text::before {
+  border: 2px solid rgba(68, 68, 68, 0.3);
 }
 
 .form-order__step-first:checked + .form-order__text::after {
@@ -160,15 +193,14 @@
   margin: 0;
   font-size: 17px;
   line-height: 18px;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .form-order__name-info:last-child {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
-.form-order__fullname,
-.form-order__inform {
+.form-order__fullname {
   padding-top: 0;
   padding-bottom: 14px;
   margin: 0;
@@ -176,7 +208,17 @@
   font: inherit;
   border: none;
   border-bottom: 2px solid #000000;
-  outline: 1px solid red;
+}
+
+.form-order__inform {
+  padding-top: 10px;
+  height: 20px;
+  padding-bottom: 14px;
+  margin: 0;
+  width: 100%;
+  font: inherit;
+  border: none;
+  border-bottom: 2px solid #000000;
 }
 
 .form-order__fullname::-webkit-input-placeholder {
@@ -197,10 +239,12 @@
   line-height: 18px;
 }
 
-.form-order__inform:-moz-placeholder {
+.form-order__inform:-moz-placeholder,
+.form-order__inform::-moz-placeholder {
   color: rgba(68, 68, 68, 0.3);
   font-size: 17px;
   line-height: 18px;
+  height: 18px;
 }
 
 .form-order__name--phone,
@@ -215,16 +259,17 @@
 
 .form-order__connection {
   position: relative;
+  padding: 0;
 }
 
 .form-order__add {
-  padding-top: 17px;
+  padding-top: 13px;
   padding-right: 70px;
   padding-left: 15px;
   padding-bottom: 0;
   margin: 0;
   width: 169px;
-  height: 122px;
+  height: 126px;
   font: inherit;
   vertical-align: top;
   border: 2px solid #000000;
@@ -236,15 +281,17 @@
   line-height: 18px;
 }
 
-.form-order__add:-moz-placeholder {
+.form-order__add::-moz-placeholder,
+.form-order__add:-moz-placeholder, {
   color: rgba(68, 68, 68, 0.3);
   font-size: 17px;
-  line-height: 18px;
+  line-height: 17px;
 }
 
 .form-order__name--add {
   padding-top: 10px;
   margin-bottom: 25px;
+  height: 18px;
 }
 
 .form-order__bottom {
@@ -288,14 +335,6 @@
   right: 5px;
 }
 
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-input[type="number"],
-input[type="password"] {
-padding-top: 0;
-}
-
 @media (min-width: $tablet-width) {
   .form-order__field--white {
     background-color: #ffffff;
@@ -309,7 +348,7 @@ padding-top: 0;
     padding-top: 62px;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -377,10 +416,6 @@ padding-top: 0;
     margin-right: 0;
   }
 
-  .form-order__text--checkbox:last-child {
-    padding-bottom: 5px;
-  }
-
   .form-order__step-second + .form-order__text::before {
     top: -18px;
     width: 50px;
@@ -410,7 +445,7 @@ padding-top: 0;
     position: relative;
     top: -7px;
     padding-left: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 26px;
     width: 100%;
     box-sizing: border-box;
     background-color: #f1f1f1;
@@ -419,12 +454,12 @@ padding-top: 0;
   .form-order__inform::-webkit-input-placeholder {
     color: rgba(68, 68, 68, 0.3);
     font-size: 19px;
-    line-height: 18px;
-  }
 
   .form-order__inform:-moz-placeholder {
     color: rgba(68, 68, 68, 0.3);
     font-size: 19px;
+    line-height: 18px;
+  }
     line-height: 18px;
   }
 
@@ -446,7 +481,7 @@ padding-top: 0;
     padding-top: 15px;
     width: 410px;
     height: 125px;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
   }
 
   .form-order__add::-webkit-input-placeholder {
@@ -483,7 +518,8 @@ padding-top: 0;
     line-height: 15px;
   }
 
-  .form-order__fullname:-moz-placeholder {
+  .form-order__fullname:-moz-placeholder,
+  .form-order__fullname::-moz-placeholder {
     color: rgba(68, 68, 68, 0.3);
     font-size: 19px;
     line-height: 15px;
@@ -539,6 +575,10 @@ padding-top: 0;
     padding-bottom: 12px;
   }
 
+  .form-order__name-info:last-child {
+    margin-bottom: 42px;
+  }
+
   .form-order__name {
     padding-left: 58px;
     width: 117px;
@@ -549,7 +589,7 @@ padding-top: 0;
   }
 
   .form-order__name-info:first-child {
-    padding-top: 6px;
+    padding-top: 2px;
   }
 
   .form-order__inner {
@@ -571,12 +611,8 @@ padding-top: 0;
     order: 1;
   }
 
-  .form-order__name-info {
-    margin-bottom: 38px;
-  }
-
   .form-order__wrap {
-    padding-top: 20px;
+    padding-top: 23px;
   }
 
   .form-order__name--phone,
@@ -584,19 +620,21 @@ padding-top: 0;
     padding-top: 5px;
   }
 
-  .form-order__inform {
-    padding-bottom: 15px;
-  }
-
   .form-order__connection {
     width: 700px;
   }
 
+  .form-order__inform {
+    top: -4px;
+  }
+
   .form-order__add {
+    top: -12px;
     width: 680px;
+    padding-top: 12px;
     padding-right: 0;
-    height: 125px;
-    margin-bottom: 20px;
+    height: 126px;
+    margin-bottom: 25px;
   }
 
   .form-order__name--add {
@@ -606,7 +644,7 @@ padding-top: 0;
   .form-order__bottom {
     padding-left: 175px;
     padding-right: 175px;
-    padding-bottom: 30px;
+    padding-bottom: 33px;
   }
 
   .form-order__svg--mail {

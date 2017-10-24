@@ -117,6 +117,10 @@
     top: 30px;
     right: 30px;
   }
+
+  .products__item:hover .products__link__svg--right {
+    top: 18px;
+  }
 }
 
 @media (min-width: $desktop-width) {

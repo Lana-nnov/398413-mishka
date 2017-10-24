@@ -134,6 +134,11 @@
     font-size: 17px;
     line-height: 24px;
   }
+
+  .shop__img img {
+    width: 334px;
+    height: 334px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -174,5 +179,10 @@
   .shop-busket__svg {
     top: 0;
     left: 0;
+  }
+
+  .shop__img img {
+    width: 316px;
+    height: 462px;
   }
 }
